@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #인터넷 요청 -> requests
 import requests
 #정적 웹페이지 크롤링 -> bs
@@ -41,3 +42,6 @@ time.sleep(2) #2초정도 정지
 df = pd.DataFrame(corpus, columns=['카테고리', '제목', '청원내용'])
 
 df.to_csv('./crawling_sample.csv', index=False, encoding='utf-8-sig')
+=======
+print('test')
+>>>>>>> a6815a5c85296b78f4c908651657bddcfd26a00e
