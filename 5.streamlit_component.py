@@ -51,7 +51,7 @@ st.info('( i ) 정보 전달')
 from PIL import Image
 
 #image.open(이미지가 있는 경로)
-img = Image.open("/kdh/roopy.jpg")
+img = Image.open("/kdh/자료폴더/roopy.jpg")
 #st.image(이미지 객체, width=너비, caption=그림설명)
 st.image(img, width=300, caption='hi, im roopy!')
 
@@ -59,7 +59,7 @@ st.image(img, width=300, caption='hi, im roopy!')
 #open(미디어의 위치, 이 미디어로 무슨작업?)
 #r(read), w(write), x(access) 
 #rb -> read binary
-video_file = open("/kdh/357054_medium.mp4", 'rb')
+video_file = open("/kdh/자료폴더/357054_medium.mp4", 'rb')
 video_binary = video_file.read()
 st.video(video_binary)
 
@@ -67,7 +67,7 @@ st.video(video_binary)
 st.video('https://www.youtube.com/watch?v=tei157-y4g8&pp=ugUEEgJrb9IHCQk_CwGHKiGM7w%3D%3D')
 
 #오디오 파일 연결
-audio_file = open('/kdh/alexguz-funk-amp-breakbeat-541097.mp3', 'rb')
+audio_file = open('/kdh/자료폴더/alexguz-funk-amp-breakbeat-541097.mp3', 'rb')
 audio_binary = audio_file.read()
 st.audio(audio_binary)
 
@@ -141,7 +141,7 @@ import seaborn as sns
 
 #공유드라이브 '머신러닝' 할 때 썼던 파일 중
 #1.기초데이터분석 -> 2.데이터분석 기초 -> 데이터
-df = pd.read_csv('/kdh/gapminder.tsv', sep='\t')
+df = pd.read_csv('/kdh/자료폴더/gapminder.tsv', sep='\t')
 st.dataframe(df)
 
 #sns, plt 그림을 그린 뒤 변수 저장
